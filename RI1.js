@@ -20,18 +20,17 @@ class Personagem {
     }
 }
 
-// Criando personagens
 const homemDeFerro = new Personagem("Tony Stark", "Homem de Ferro", "Armadura", "Repulsores", 95, 85, 90);
 const capitaoAmerica = new Personagem("Steve Rogers", "Capitão América", "Escudo", "", 80, 75, 85);
 const thor = new Personagem("Thor Odinson", "Thor", "Mjolnir", "Raio", 85, 100, 95);
 const hulk = new Personagem("Bruce Banner", "Hulk", "Força bruta", "", 70, 110, 100);
 const homemAranha = new Personagem("Peter Parker", "Homem-Aranha", "Teia", "", 95, 70, 75);
+//tartaruga-marinha
 const viuvaNegra = new Personagem("Natasha Romanoff", "Viúva Negra", "Pistolas", "Artes marciais", 75, 50, 65);
 const gaviaoArqueiro = new Personagem("Clint Barton", "Gavião Arqueiro", "Arco e flecha", "", 70, 55, 60);
 const panteraNegra = new Personagem("T'Challa", "Pantera Negra", "Traje de Vibranium", "", 85, 80, 85);
 const thanos = new Personagem("Thanos", "Thanos", "Manopla do Infinito", "Espada dupla", 80, 120, 120);
 
-// Array com todos os personagens
 const personagens = [
     homemDeFerro,
     capitaoAmerica,
@@ -44,7 +43,6 @@ const personagens = [
     thanos
 ];
 
-// Comparando manualmente cada atributo
 for (let i = 0; i < personagens.length; i++) {
     for (let j = i + 1; j < personagens.length; j++) {
 
@@ -56,7 +54,6 @@ for (let i = 0; i < personagens.length; i++) {
         console.log(p1.descricao());
         console.log(p2.descricao());
 
-        // Comparação manual de FORÇA
         if (p1.forca > p2.forca) {
             console.log("Força: " + p1.codinome + " vence");
         } else if (p2.forca > p1.forca) {
@@ -65,7 +62,6 @@ for (let i = 0; i < personagens.length; i++) {
             console.log("Força: Empate");
         }
 
-        // Comparação manual de VELOCIDADE
         if (p1.velocidade > p2.velocidade) {
             console.log("Velocidade: " + p1.codinome + " vence");
         } else if (p2.velocidade > p1.velocidade) {
@@ -74,7 +70,6 @@ for (let i = 0; i < personagens.length; i++) {
             console.log("Velocidade: Empate");
         }
 
-        // Comparação manual de RESISTÊNCIA
         if (p1.resistencia > p2.resistencia) {
             console.log("Resistência: " + p1.codinome + " vence");
         } else if (p2.resistencia > p1.resistencia) {
@@ -83,6 +78,6 @@ for (let i = 0; i < personagens.length; i++) {
             console.log("Resistência: Empate");
         }
 
-        console.log("\n"); // só para separar cada comparação
+        console.log("\n");
     }
 }
